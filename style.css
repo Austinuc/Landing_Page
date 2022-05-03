@@ -1,0 +1,142 @@
+body {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    padding: 0 100px;
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #F9FAF8;;
+}
+nav ul {
+    margin-left: auto;
+    display: flex;
+    padding-right: 20px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    padding-left: 20px;
+}
+.hero {
+    background-color: #1F2937;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    color: #F9FAF8;
+    padding: 150px 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.hero img {
+    width: 350px;
+    flex: 1;
+}
+.hero article {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 500px;
+}
+.hero article h2 {
+    font-size: 48px;
+    font-weight: 900;
+
+}
+.hero article p {
+    font-size: 20px;
+
+}
+.hero article button {
+    font-size: 24px;
+    max-width: 250px;
+    padding: 20px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    border-radius: 8px;
+
+}
+.hero article button:hover {
+    background-color: transparent;
+    border: 1px solid #F9FAF8;
+
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 100px 150px;
+    
+}
+.features section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.features h2 {
+    font-size: 36px;
+}
+.showcase {
+    width: 300px;
+}
+.quote {
+    background-color: #E5E7EB;
+    padding: 150px 100px;
+}
+
+.quote p {
+    text-align: right;
+    margin-inline-end: 40px;
+    font-weight: bold;
+}
+.call-to-action {
+    padding: 100px 100px 150px;
+    
+}
+.call-to-action div {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    color: #F9FAF8;
+}
+.call-to-action div button {
+    width: 300px;
+    padding: 20px;
+    margin-left: auto;
+    align-self: center;
+    flex: 0 0 auto; 
+    color: #F9FAF8;
+    border: 1px solid #F9FAF8;
+    background-color: transparent;
+    border-radius: 8px;
+}
+.call-to-action div button:hover {
+    color: #3882F6;
+    border: 1px solid #F9FAF8;
+    background-color: #F9FAF8;
+}
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+footer {
+    /* padding: 40px; */
+    display: flex;
+    color: #F9FAF8;
+    justify-content: center;
+    background-color: #1F2937;
+}

@@ -2,6 +2,8 @@
 # A Simple Responsive HTML, CSS Landing Page
 Project published on GitHub pages. [View the live project here.](https://austinuc.github.io/Landing_Page/)
 
+![Site Mockup](https://github.com/Austinuc/Landing_Page/blob/main/landing-page-github-responsive-mockup.png)
+
 This is a mobile-first landing page design project to showcase my knowledge and use of HTML5, CSS(Grids & Flexbox) for positioning and responsive layouts. No framework was used for this project.
 ## UI CONTENT LAYOUT
 The entire web content layout was structured with CSS grid and flexbox; starting from the navigation bar to the footer.

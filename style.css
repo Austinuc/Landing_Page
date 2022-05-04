@@ -1,5 +1,5 @@
 body {
-    display: inline-flex;
+    /* display: inline-flex; */
     flex-direction: column;
     position: relative;
     padding: 0;
@@ -16,6 +16,25 @@ nav {
     right: 0;
     border-bottom: 1px solid #F9FAF8;;
 }
+nav h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media only screen and (max-width: 968px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+    nav ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero article h2 {
+        font-size: 30px !important;
+    
+    }
+  }
 nav ul {
     margin-left: auto;
     display: flex;
@@ -27,19 +46,25 @@ nav ul {
 nav ul li {
     padding-left: 20px;
 }
+nav ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .hero {
     background-color: #1F2937;
     margin-top: 50px;
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     color: #F9FAF8;
     padding: 150px 100px;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
+
 .hero img {
-    width: 350px;
+    width: 550px;
     flex: 1;
 }
 .hero article {
@@ -70,7 +95,28 @@ nav ul li {
 .hero article button:hover {
     background-color: transparent;
     border: 1px solid #F9FAF8;
+    cursor: pointer;
 
+}
+@media only screen and (max-width: 980px) {
+    .hero {
+        padding: 80px 20px;
+        flex-direction: column-reverse;
+    }
+    .hero article h2 {
+        font-size: 30px;
+    
+    }
+    .hero article button {
+        max-width: 350px;
+    }
+    .hero article {
+        width: auto;
+    }
+    .hero img {
+        width: 100%;
+        flex: 1;
+    }
 }
 .features {
     display: flex;
@@ -81,15 +127,19 @@ nav ul li {
 }
 .features section {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 .features h2 {
     font-size: 36px;
+    text-align: center;
 }
 .showcase {
     width: 300px;
 }
+
 .quote {
     background-color: #E5E7EB;
     padding: 150px 100px;
@@ -106,6 +156,7 @@ nav ul li {
 }
 .call-to-action div {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     padding: 20px;
     background-color: #3882F6;
@@ -116,17 +167,24 @@ nav ul li {
     width: 300px;
     padding: 20px;
     margin-left: auto;
+    margin-right: auto;
     align-self: center;
-    flex: 0 0 auto; 
+    flex: 0 1 auto; 
     color: #F9FAF8;
     border: 1px solid #F9FAF8;
     background-color: transparent;
     border-radius: 8px;
 }
+.call-to-action div article {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 .call-to-action div button:hover {
     color: #3882F6;
     border: 1px solid #F9FAF8;
     background-color: #F9FAF8;
+    cursor: pointer;
 }
 figcaption {
     text-align: center;
@@ -139,4 +197,23 @@ footer {
     color: #F9FAF8;
     justify-content: center;
     background-color: #1F2937;
+}
+@media only screen and (max-width: 968px) {
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px 50px;
+        
+    }
+    .features h2 {
+        font-size: 36px;
+    }
+    .quote {
+        padding: 50px 50px;
+    }
+    .call-to-action {
+        padding: 50px 20px 50px;
+        
+    }
 }
